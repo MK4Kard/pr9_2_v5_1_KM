@@ -1,6 +1,6 @@
 package EntranceExams
 
-class Exam(var date: Int, var month: String, eeFaculty: String, eeSurname: String) : Abturient(eeFaculty, eeSurname) {
+class Exam(var date: Int, eeFaculty: String, eeSurname: String) : Abturient(eeFaculty, eeSurname) {
     private var countEx: Int = 1
     public fun GetCount(): Int {
         return countEx
@@ -21,7 +21,7 @@ class Exam(var date: Int, var month: String, eeFaculty: String, eeSurname: Strin
             println("введены неверные данные")
         }
         else {
-            println("Абитуриент ${surname} сдал ${countEx} экзамена ${date} ${month}")
+            println("Абитуриент ${surname} сдал ${countEx} экзамена ${date} числа")
             println("для поступления на факультет по ${faculty}")
         }
     }
